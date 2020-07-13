@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <script src="https://kit.fontawesome.com/513a90c333.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <form action="">
+        <input type="text" class="task-input">
+        <button class="task-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="tasks" class="filter-task">
+                <option value="all">Todas</option>
+                <option value="completed">Completas</option>
+                <option value="uncompleted">Incompletas</option>
+            </select>
+        </div>
+    </form>
+    <div class="tasks-container">
+        <ul class="tasks-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
